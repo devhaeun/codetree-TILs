@@ -1,0 +1,5 @@
+date = input().split(".")
+y = int(date[0])
+m = int(date[1])
+d = int(date[2])
+print(f"{m}-{d}-{y}")
