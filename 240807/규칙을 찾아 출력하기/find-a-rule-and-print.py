@@ -6,7 +6,7 @@ for i in range(n):
         print()
     else:
         for j in range(n):
-            if j==5:
+            if j==n-1:
                 print('*')
             elif j<i:
                 print('*', end=' ')
