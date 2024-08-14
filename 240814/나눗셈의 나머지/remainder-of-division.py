@@ -1,6 +1,6 @@
 a,b = list(map(int, input().split()))
 cntlst = [0]*10
-while a>0:
+while a>1:
     cntlst[a%b]+=1
     a//=b
 my_sum=0
