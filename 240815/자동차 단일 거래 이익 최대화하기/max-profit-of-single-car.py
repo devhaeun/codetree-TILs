@@ -1,7 +1,14 @@
 n = int(input())
 prices = list(map(int, input().split()))
-mini = min(prices[:n-1])
-idx = prices.index(mini)
-maxi = max(prices[idx:])
+mini = prices[0]
+idx = -1
+for i in range(n):
+    if mini>prices[i]:
+        mini = prices[i]
+        idx = i
 
-print(maxi-mini) if maxi>mini else print(0)
+maxi = mini
+for el in prices[idx:n]:
+    if maxi<el:
+        maxi=el
+print(maxi-mini)
