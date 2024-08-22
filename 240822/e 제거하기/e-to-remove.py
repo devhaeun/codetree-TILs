@@ -1,0 +1,6 @@
+string = input()
+idx = string.find('e')
+string_lst = list(string)
+string_lst.pop(idx)
+string = ''.join(string_lst)
+print(string)
