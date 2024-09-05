@@ -3,7 +3,8 @@ a = list(map(int, input().split()))
 
 def func(m):
     result = 0
-    while m>1:
+    while m>=1:
+        # print(f'm: {m}')
         result += a[m-1]
         if m%2==1:
             m-=1
