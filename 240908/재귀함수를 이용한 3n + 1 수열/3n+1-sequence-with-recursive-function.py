@@ -1,7 +1,7 @@
 n = int(input())
 
 def repeat_cnt(n):
-    if n==2:
+    if n<=2:
         return 1
     if n%2==0:
         temp = repeat_cnt(n//2)
