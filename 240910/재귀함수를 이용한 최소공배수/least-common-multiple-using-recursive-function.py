@@ -7,8 +7,11 @@ def LCM(i):
         result = 1
     else:
         result = LCM(i-1)
-    
-    if result%numbers[i]!=0:
+
+    if result==1:
+        result*=numbers[i]
+        
+    elif result%numbers[i]!=0:
         if numbers[i] in [1,2,3,5,7]:
             result *= numbers[i]
         else:
@@ -17,8 +20,11 @@ def LCM(i):
                     result*=2
                 elif result%2==0:
                     result*=numbers[i]//2
+                else:
+                    result*=2
             else:
                 result*=3 if result%3==0 else 9
+    # print(f'{i}: {result}')
     return result
 
 result = LCM(n-1)
