@@ -1,5 +1,5 @@
 m1, d1, m2, d2 = map(int, input().split())
-days_of_months = [31, 28, 30, 31, 31, 30, 31, 31, 30, 31, 30, 31]
+days_of_months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 def count_date(m, d):
     days = 0
